@@ -1,10 +1,15 @@
-<!-- <mat-sidenav-container class="example-container" *ngIf="shouldRun">
-    <mat-sidenav mode="side" opened>
+<div class="container">
+    <div class="side-nav">
         <app-side-bar-nav></app-side-bar-nav>
-    </mat-sidenav>
-    <mat-sidenav-content>
-        <app-side-bar-content></app-side-bar-content>
-    </mat-sidenav-content>
-</mat-sidenav-container>
- -->
+    </div>
 
+    <mat-sidenav-container class="mat-sidenav-container">
+        <mat-sidenav #sidenav mode="side">
+            hello
+        </mat-sidenav>
+        <mat-sidenav-content>
+            <p><button mat-button (click)="sidenav.toggle()">Toggle</button></p>
+            <app-side-bar-content></app-side-bar-content>
+        </mat-sidenav-content>
+    </mat-sidenav-container>        
+</div>

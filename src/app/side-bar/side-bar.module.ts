@@ -3,12 +3,14 @@ import { CommonModule } from '@angular/common';
 import { SideBarContainerComponent } from './side-bar-container/side-bar-container.component';
 import { SideBarNavComponent } from './side-bar-nav/side-bar-nav.component';
 import { SideBarContentComponent } from './side-bar-content/side-bar-content.component';
+import { CommonUiModule } from '../common-ui/common-ui.module';
 
 
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    CommonUiModule
   ],
   declarations: [
     SideBarContainerComponent,
@@ -16,7 +18,9 @@ import { SideBarContentComponent } from './side-bar-content/side-bar-content.com
     SideBarContentComponent
   ],
   exports: [
-    SideBarContainerComponent
+    SideBarContainerComponent,
+    SideBarNavComponent,
+    SideBarContentComponent
   ]
 })
 export class SideBarModule { }

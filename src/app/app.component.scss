@@ -1,0 +1,12 @@
+.app-container {
+    display: flex;
+    height: 100%;
+}
+
+.app-side-bar {
+    flex: 1;
+}
+
+.app-content {
+    flex: 30;
+}
